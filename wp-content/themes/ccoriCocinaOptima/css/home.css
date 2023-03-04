@@ -1,0 +1,83 @@
+.home-page .green-block {
+    margin-top: 80px;
+  }
+  .home-page .image-block.sided.left {
+    margin-top: 80px;
+  }
+  .home-page .image-block.sided.right {
+    margin-top: 112px;
+  }
+  .home-page .dark-image-block {
+    margin-top: 128px;
+  }
+  .home-page .recetas {
+    margin-top: 128px;
+  }
+  .home-page .recetas > .container > .recetas__list > .glide__bullets {
+    display: none;
+  }
+  .home-page .recetas > .container > .glide {
+    margin-top: 40px;
+    margin-bottom: 96px;
+  }
+  .home-page .recetas h2 {
+    font-size: 56px;
+    font-family: "OCR-A-Std-Regular";
+    text-align: center;
+  }
+  .home-page .recetas ul a {
+    display: block;
+  }
+  .home-page .recetas ul a img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+  }
+  @media screen and (max-width: 1024px) {
+    .home-page .recetas {
+      margin-top: 80px;
+    }
+    .home-page .recetas > .container h2 {
+      font-size: 32px;
+      line-height: 42px;
+      text-align: left;
+    }
+    .home-page .recetas > .container > .recetas__list > .glide__bullets {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 16px;
+    }
+    .home-page .recetas > .container > .recetas__list > .glide__bullets button.glide__bullet {
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: #BFBFBF;
+      border-radius: 16px;
+      border: none;
+      transition: width 0.2s, background-color 0.2s;
+    }
+    .home-page .recetas > .container > .recetas__list > .glide__bullets button.glide__bullet:not(:last-child) {
+      margin-right: 8px;
+    }
+    .home-page .recetas > .container > .recetas__list > .glide__bullets button.glide__bullet--active {
+      width: 40px;
+      background-color: #3BC9AF;
+    }
+    .home-page .recetas > .container > .glide {
+      margin-top: 16px;
+      margin-bottom: 80px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .home-page .green-block {
+      margin-top: 0px;
+    }
+    .home-page .image-block.sided.right {
+      margin-top: 80px;
+    }
+    .home-page .dark-image-block {
+      margin-top: 80px;
+    }
+  }

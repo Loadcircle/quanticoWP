@@ -1,0 +1,88 @@
+.investigacion-y-desarrollo-page {
+    background-color: #fff;
+}
+
+h2.page_title {
+    font-family: "OCR-A-Std-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #181A1A;
+    margin-top: 80px;
+    padding: 0 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    h2.page_title {
+        font-size: 32px;
+        line-height: 42px;
+        margin-top: 40px;
+    }
+}
+
+p.page_description {
+    margin-top: 56px;
+    font-family: "Amsi Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #181A1A;
+    padding: 0 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    p.page_description {
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 32px;
+    }
+}
+
+.tabs {
+    margin-top: 56px;
+    margin-bottom: 96px;
+}
+
+.tabs .tab-page .grid-images {
+    padding: 0;
+    margin-top: 48px;
+}
+
+.tabs .tab-page .container {
+    padding: 0 16px;
+}
+
+.tabs .tab-page .news {
+    margin-top: 96px;
+}
+
+.tabs .tab-page .books {
+    margin-top: 96px;
+}
+
+.tabs .tab-page-description {
+    margin-top: 80px;
+    white-space: pre-line;
+    font-family: "Amsi Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #181A1A;
+}
+
+.tabs .tab-page-description strong {
+    color: #3BC9AF;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    .tabs .tab-page-description {
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 32px;
+    }
+}

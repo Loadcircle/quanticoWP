@@ -1,0 +1,169 @@
+main.todos-somos-ccori-page .page_title {
+    font-family: "OCR-A-Std-Regular";
+    display: block;
+    color: #181A1A;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    margin-top: 80px;
+  }
+  main.todos-somos-ccori-page .page_description {
+    font-family: "Amsi Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #181A1A;
+    white-space: pre-line;
+    margin-top: 56px;
+  }
+  main.todos-somos-ccori-page .page_description strong {
+    font-weight: 400;
+    color: #3BC9AF;
+  }
+  main.todos-somos-ccori-page .green-hero-video {
+    margin-top: 80px;
+  }
+  main.todos-somos-ccori-page .image-info-block {
+    margin-top: 120px;
+  }
+  main.todos-somos-ccori-page .grid-images {
+    margin-top: 120px;
+  }
+  main.todos-somos-ccori-page .grid-text {
+    position: relative;
+    margin-top: 128px;
+    padding-bottom: 112px;
+  }
+  main.todos-somos-ccori-page .grid-text .container {
+    position: relative;
+  }
+  main.todos-somos-ccori-page .grid-text button.trigger-dropdown {
+    display: none;
+  }
+  @media screen and (max-width: 1024px) {
+    main.todos-somos-ccori-page .grid-text button.trigger-dropdown {
+      outline: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 43px;
+      height: 43px;
+      border-radius: 8px;
+      background-color: #3BC9AF;
+      background-image: url(../img/arrow-down.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    main.todos-somos-ccori-page .grid-text button.trigger-dropdown:hover {
+      opacity: 0.8;
+    }
+    main.todos-somos-ccori-page .grid-text button.trigger-dropdown:active {
+      opacity: 0.6;
+    }
+  }
+  main.todos-somos-ccori-page .grid-text h2 {
+    font-family: "OCR-A-Std-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: #181A1A;
+    margin-bottom: 32px;
+  }
+  main.todos-somos-ccori-page .grid-text:before {
+    content: "";
+    height: 214%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #F4F5F7;
+    z-index: -1;
+  }
+  main.todos-somos-ccori-page .grid-text .card {
+    height: 96px;
+    border-radius: 24px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main.todos-somos-ccori-page .grid-text .card:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  main.todos-somos-ccori-page .grid-text .card .title {
+    font-family: "Amsi Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #181A1A;
+  }
+  main.todos-somos-ccori-page .grid-text .card .label {
+    margin-top: 3px;
+    font-family: "Amsi Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #BFBFBF;
+  }
+  main.todos-somos-ccori-page .grid-text .grid {
+    column-gap: 24px;
+    row-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  @media screen and (max-width: 1190px) {
+    main.todos-somos-ccori-page .grid-text .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    main.todos-somos-ccori-page .grid-text .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  main.todos-somos-ccori-page .grid-image-cards-dropdown {
+    margin-top: 120px;
+  }
+  main.todos-somos-ccori-page .green-block {
+    margin-top: 96px;
+  }
+  @media screen and (max-width: 1190px) {
+    main.todos-somos-ccori-page .container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    main.todos-somos-ccori-page h2:before {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: -16px;
+      height: 2px;
+      width: 100%;
+      background: #fff;
+      border-radius: 24px;
+    }
+    main.todos-somos-ccori-page .page_title {
+      font-size: 32px;
+      line-height: 42px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    main.todos-somos-ccori-page .page_description {
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 32px;
+    }
+  }

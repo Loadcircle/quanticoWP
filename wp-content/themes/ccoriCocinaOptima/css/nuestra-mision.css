@@ -1,0 +1,126 @@
+.container h2.page_title {
+    font-family: "OCR-A-Std-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #181A1A;
+    margin-top: 80px;
+    margin-bottom: 56px;
+  }
+  
+  .cocina-optima {
+    margin-top: 120px;
+  }
+  .cocina-optima h2 {
+    font-family: "OCR-A-Std-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 32px;
+  }
+  .cocina-optima p {
+    font-family: "Amsi Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .cocina-optima .co-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    margin-top: 48px;
+  }
+  @media screen and (max-width: 1024px) {
+    .cocina-optima .co-list {
+      display: block;
+    }
+  }
+  .cocina-optima .co-list .co-card {
+    border-radius: 24px;
+  }
+  .cocina-optima .co-list .co-card .co-image img {
+    width: 100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+  .cocina-optima .co-list .co-card .co-info {
+    border: 3px solid #F4F5F7;
+    border-top: none;
+    padding: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  .cocina-optima .co-list .co-card .co-info h3.co-title {
+    font-family: "Amsi Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #3BC9AF;
+    margin: 0;
+  }
+  .cocina-optima .co-list .co-card .co-info p.co-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #181A1A;
+    margin-top: 7px;
+  }
+  .cocina-optima .co-list .co-card:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .programas-educativos {
+    margin-top: 120px;
+    margin-bottom: 96px;
+  }
+  .programas-educativos h2 {
+    font-family: "OCR-A-Std-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 32px;
+  }
+  .programas-educativos .co-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    margin-top: 48px;
+  }
+  @media screen and (max-width: 1024px) {
+    .programas-educativos .co-list {
+      display: block;
+    }
+  }
+  .programas-educativos .co-list .co-card {
+    border: 3px solid #F4F5F7;
+    border-radius: 24px;
+  }
+  .programas-educativos .co-list .co-card .co-image {
+    display: flex;
+    height: 304px;
+    align-items: center;
+    justify-content: center;
+  }
+  .programas-educativos .co-list .co-card .co-image img {
+    display: block;
+    margin: auto;
+  }
+  .programas-educativos .co-list .co-card .co-info p.co-description {
+    padding: 0 70px 56px;
+    font-family: "Amsi Pro";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #181A1A;
+    margin-top: 7px;
+    text-align: center;
+  }
+  .programas-educativos .co-list .co-card:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  }

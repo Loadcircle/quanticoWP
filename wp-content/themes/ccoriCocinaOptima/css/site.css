@@ -1,0 +1,1801 @@
+@charset "UTF-8";
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "OCR-A-Std-Regular";
+  src: url("../fonts/ocr-a/OCR-A-Std-Regular.woff") format("woff"), url("../fonts/ocr-a/OCR-A-Std-Regular.woff2") format("woff2"), url("../fonts/ocr-a/OCR-A-Std-Regular.eot"), url("../fonts/ocr-a/OCR-A-Std-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ocr-a/OCR-A-Std-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-Black.eot");
+  src: local("Amsi Pro Black"), local("AmsiProNormal-Black"), url("../fonts/amsi-pro/AmsiProNormal-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-Black.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-Black.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-LightItalic.eot");
+  src: local("Amsi Pro Light Italic"), local("AmsiProNormal-LightItalic"), url("../fonts/amsi-pro/AmsiProNormal-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-LightItalic.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-LightItalic.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-ExtraLight.eot");
+  src: local("Amsi Pro ExtraLight"), local("AmsiProNormal-ExtraLight"), url("../fonts/amsi-pro/AmsiProNormal-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-ExtraLight.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-ExtraLight.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-BlackItalic.eot");
+  src: local("Amsi Pro Black Italic"), local("AmsiProNormal-BlackItalic"), url("../fonts/amsi-pro/AmsiProNormal-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-BlackItalic.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-BlackItalic.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-Light.eot");
+  src: local("Amsi Pro Light"), local("AmsiProNormal-Light"), url("../fonts/amsi-pro/AmsiProNormal-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-Light.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-Light.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-Italic.eot");
+  src: local("Amsi Pro Italic"), local("AmsiProNormal-Italic"), url("../fonts/amsi-pro/AmsiProNormal-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-Italic.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-Italic.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-Bold.eot");
+  src: local("Amsi Pro Bold"), local("AmsiProNormal-Bold"), url("../fonts/amsi-pro/AmsiProNormal-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-Bold.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-Bold.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-ExtraLightItalic.eot");
+  src: local("Amsi Pro ExtraLight Italic"), local("AmsiProNormal-ExtraLightItalic"), url("../fonts/amsi-pro/AmsiProNormal-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-ExtraLightItalic.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-ExtraLightItalic.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-BoldItalic.eot");
+  src: local("Amsi Pro Bold Italic"), local("AmsiProNormal-BoldItalic"), url("../fonts/amsi-pro/AmsiProNormal-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-BoldItalic.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-BoldItalic.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-ThinItalic.eot");
+  src: local("Amsi Pro Thin Italic"), local("AmsiProNormal-ThinItalic"), url("../fonts/amsi-pro/AmsiProNormal-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-ThinItalic.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-ThinItalic.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-Regular.eot");
+  src: local("Amsi Pro"), local("AmsiProNormal-Regular"), url("../fonts/amsi-pro/AmsiProNormal-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-Regular.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-Regular.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-Thin.eot");
+  src: local("Amsi Pro Thin"), local("AmsiProNormal-Thin"), url("../fonts/amsi-pro/AmsiProNormal-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-Thin.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-Thin.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-SemiBold.eot");
+  src: local("Amsi Pro SemiBold"), local("AmsiProNormal-SemiBold"), url("../fonts/amsi-pro/AmsiProNormal-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-SemiBold.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-SemiBold.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro Ultra";
+  src: url("../fonts/amsi-pro/AmsiProNormal-UltraItalic.eot");
+  src: local("Amsi Pro Ultra Italic"), local("AmsiProNormal-UltraItalic"), url("../fonts/amsi-pro/AmsiProNormal-UltraItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-UltraItalic.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-UltraItalic.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-UltraItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro Ultra";
+  src: url("../fonts/amsi-pro/AmsiProNormal-Ultra.eot");
+  src: local("Amsi Pro Ultra"), local("AmsiProNormal-Ultra"), url("../fonts/amsi-pro/AmsiProNormal-Ultra.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-Ultra.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-Ultra.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-Ultra.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro";
+  src: url("../fonts/amsi-pro/AmsiProNormal-SemiBoldItalic.eot");
+  src: local("Amsi Pro SemiBold Italic"), local("AmsiProNormal-SemiBoldItalic"), url("../fonts/amsi-pro/AmsiProNormal-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProNormal-SemiBoldItalic.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProNormal-SemiBoldItalic.woff") format("woff"), url("../fonts/amsi-pro/AmsiProNormal-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amsi Pro Opt Headline";
+  src: url("../fonts/amsi-pro/AmsiProOpt-Headline.eot");
+  src: local("Amsi Pro Opt Headline"), local("AmsiProOpt-Headline"), url("../fonts/amsi-pro/AmsiProOpt-Headline.eot?#iefix") format("embedded-opentype"), url("../fonts/amsi-pro/AmsiProOpt-Headline.woff2") format("woff2"), url("../fonts/amsi-pro/AmsiProOpt-Headline.woff") format("woff"), url("../fonts/amsi-pro/AmsiProOpt-Headline.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+p, a, input, textarea, h1, h2, h3, h4, h5, h6 {
+  vertical-align: super;
+}
+
+body.drawer-opened > header > .backdrop {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  backdrop-filter: blur(8px);
+}
+body.drawer-opened > header > nav {
+  transform: translateX(0);
+  backdrop-filter: blur(8px);
+}
+
+body > header {
+  position: relative;
+  z-index: 3;
+}
+
+body > main {
+  position: relative;
+  z-index: 2;
+}
+
+body > footer {
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Amsi Pro";
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+header .backdrop {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  background-color: rgba(24, 26, 26, 0.5);
+  backdrop-filter: blur(0px);
+  z-index: 4;
+  transition: backdrop-filter 0.2s, opacity 0.2s;
+}
+header h1 {
+  line-height: 100%;
+  margin-right: 36px;
+}
+header h1 a {
+  display: block;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  max-width: 982px;
+}
+header nav > div.logo {
+  display: none;
+}
+header nav > div.logo a {
+  display: block;
+}
+header nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header nav > ul a {
+  color: #181A1A;
+  display: block;
+  text-decoration: none;
+}
+header nav > ul a:hover {
+  color: #3BC9AF;
+}
+header nav > ul a:active {
+  opacity: 0.6;
+}
+header nav > ul > li > a {
+  line-height: 52px;
+  display: block;
+}
+header nav > ul > li > a img {
+  margin-left: 13px;
+}
+header nav > ul li {
+  display: flex;
+  position: relative;
+  height: 100%;
+  align-items: flex-start;
+}
+header nav > ul li > ul {
+  display: block;
+  position: absolute;
+  top: calc(100% + 25px);
+  right: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition: opacity 0.2s, transform 0.2s;
+  height: 0;
+  background-color: #fff;
+}
+header nav > ul li > ul:before {
+  content: "";
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+}
+header nav > ul li > ul a {
+  white-space: nowrap;
+  line-height: 30px;
+  margin-bottom: 16px;
+  width: 100%;
+  display: block;
+}
+header nav > ul li > ul li.arrow {
+  position: absolute;
+  display: block;
+  bottom: calc(100% + 3px);
+  right: 35px;
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 23px solid #F4F5F7;
+}
+header nav > ul li > ul li.arrow:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 20px solid #fff;
+  margin-left: -11px;
+  margin-top: 6px;
+}
+header nav > ul li.active > ul {
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+  transform: scale(1) translateY(0rem);
+  border: 3px solid #F4F5F7;
+  padding: 12px 20px 12px 12px;
+  border-radius: 21px;
+}
+header nav > ul .btn {
+  padding-right: 38px;
+  padding-left: 38px;
+}
+header button.open-drawer-btn {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  header button.open-drawer-btn {
+    display: block;
+  }
+  header .open-drawer-btn, header .close-drawer-btn {
+    line-height: auto;
+    border: none;
+    background: #fff;
+    padding: 0px;
+  }
+  header .open-drawer-btn:active, header .close-drawer-btn:active {
+    opacity: 0.5;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    background: #fff;
+    padding: 14px 16px;
+    flex-direction: column;
+    z-index: 5;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+    width: 295px;
+    overflow-y: auto;
+  }
+  header nav > div.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav > ul {
+    margin-top: 48px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  header nav > ul > li {
+    flex: 0;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+  header nav > ul > li.active img {
+    transform: rotate(180deg);
+  }
+  header nav > ul > li > a {
+    font-weight: bold;
+    line-height: 22px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav > ul > li > ul {
+    position: relative;
+    display: block;
+    top: initial;
+    right: initial;
+    border: none !important;
+    padding: 0 0 0 16px !important;
+    transform: none !important;
+  }
+  header nav > ul > li > ul:before {
+    display: none;
+  }
+  header nav > ul > li > ul li.arrow {
+    display: none;
+  }
+  header nav > ul > li > ul a {
+    line-height: 30px;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  header nav > ul > li > ul a:before {
+    content: "· ";
+  }
+  header nav > ul > li > ul > li {
+    height: auto;
+  }
+  header nav .btn {
+    margin-top: 24px;
+  }
+}
+
+footer {
+  background-color: #181A1A;
+  color: #fff;
+  padding: 0 80px;
+}
+footer section.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 0;
+}
+footer section.info nav {
+  display: flex;
+  align-items: flex-start;
+}
+footer section.info nav > section:not(:first-child) {
+  margin-left: 184px;
+}
+footer section.info nav h2 {
+  font-family: "OCR-A-Std-Regular";
+  font-size: 24px;
+  color: #3BC9AF;
+  margin-bottom: 16px;
+}
+footer section.info nav ul.follow-us {
+  display: flex;
+  text-align: left;
+}
+footer section.info nav ul.follow-us li:not(:last-child) {
+  margin-right: 16px;
+}
+footer section.info nav ul.follow-us a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 40px;
+  background-color: #fff;
+  color: #181A1A;
+  font-size: 20px;
+}
+footer section.info nav ul.contact {
+  font-size: 20px;
+  font-family: "Amsi Pro";
+  text-align: right;
+}
+footer section.info nav ul.contact li:not(:last-child) {
+  margin-bottom: 16px;
+}
+footer section.credits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  position: relative;
+}
+footer section.credits:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+}
+footer section.credits p {
+  font-family: "Amsi Pro";
+  font-weight: 400;
+}
+footer section.credits p img {
+  margin-left: 9px;
+  vertical-align: middle;
+}
+@media screen and (max-width: 876px) {
+  footer section.info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer section.info > img {
+    display: block;
+    margin-bottom: 56px;
+    align-self: center;
+  }
+  footer section.info nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  footer section.info nav > section {
+    margin-left: 0 !important;
+  }
+  footer section.info nav ul {
+    text-align: left !important;
+  }
+}
+@media screen and (max-width: 520px) {
+  footer section.info nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  footer section.info nav > section:not(:first-child) {
+    margin-top: 56px;
+  }
+  footer section.credits {
+    flex-direction: column;
+  }
+  footer section.credits p {
+    text-align: center;
+  }
+  footer section.credits p:not(:first-child) {
+    margin-top: 22px;
+  }
+}
+
+/* Helpers */
+.row {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+@media screen and (max-width: 1190px) {
+  .row {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+}
+.grid.col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+}
+.grid.col-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 24px;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 17px;
+  vertical-align: super;
+  font-size: 16px;
+  color: #fff;
+  background-color: #181A1A;
+  min-width: 200px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Amsi Pro";
+  border-radius: 50px;
+  transition: transform 0.2s;
+  line-height: initial;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn.btn-turquoise {
+  background-color: #3BC9AF;
+}
+.btn.btn-fluid {
+  min-width: 0;
+}
+.btn:hover {
+  transform: scale(1.02);
+}
+.btn:active {
+  transform: scale(1);
+  opacity: 0.6;
+}
+
+button.trigger-dropdown {
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 8px;
+  background-color: #3BC9AF;
+  background-image: url(../img/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+button.trigger-dropdown:hover {
+  opacity: 0.8;
+}
+button.trigger-dropdown:active {
+  opacity: 0.6;
+}
+
+.slick-slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-slider .slick-dots li button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: #BFBFBF;
+  border-radius: 50px;
+  font-size: 0px;
+  color: #BFBFBF;
+  transition: width 0.2s;
+}
+.slick-slider .slick-dots li.slick-active button {
+  width: 40px;
+  background: #3BC9AF;
+  color: #3BC9AF;
+}
+.slick-slider .slick-dots li:not(:first-child) {
+  margin-left: 8px;
+}
+
+.tabs {
+  display: none;
+}
+.tabs.ready {
+  display: block;
+}
+.tabs .tab-triggers .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 0 72px 0;
+}
+.tabs .tab-triggers .container a {
+  font-family: "Amsi Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #BFBFBF;
+  text-decoration: none;
+  position: relative;
+}
+.tabs .tab-triggers .container a:before {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: -16px;
+  height: 8px;
+  width: 100%;
+  background-color: #3BC9AF;
+  border-radius: 8px;
+  transition: width 0.2s;
+  width: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tabs .tab-triggers .container a.active {
+  color: #3BC9AF;
+}
+.tabs .tab-triggers .container a.active:before {
+  width: 100%;
+}
+.tabs .tab-triggers select {
+  display: none;
+  width: 100%;
+  background-color: #3BC9AF;
+  height: 48px;
+  border-radius: 48px;
+  border: none;
+  padding: 0 16px;
+  color: #fff;
+  font-family: "Amsi Pro";
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .tabs .tab-triggers {
+    padding: 0 16px;
+  }
+  .tabs .tab-triggers select {
+    display: block;
+  }
+  .tabs .tab-triggers .container {
+    display: none;
+  }
+}
+.tabs .tab-pages {
+  position: relative;
+}
+.tabs .tab-pages .tab-page:not(.active) {
+  overflow: hidden;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: -500px;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hero .container {
+  padding: 169px 0 90px 0;
+  position: relative;
+}
+.hero h2 {
+  font-family: "OCR-A-Std-Regular";
+  font-size: 56px;
+  position: relative;
+  z-index: 2;
+}
+.hero p {
+  margin-top: 24px;
+  font-size: 20px;
+  font-family: "Amsi Pro";
+  color: #181A1A;
+  line-height: 36px;
+  width: 100%;
+  max-width: 713px;
+  position: relative;
+  z-index: 2;
+}
+.hero p strong {
+  color: #3BC9AF;
+  font-weight: bold;
+}
+.hero a.btn {
+  position: relative;
+  z-index: 2;
+  margin-top: 32px;
+}
+.hero img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1024px) {
+  .hero .container {
+    padding: 40px 0 80px 0;
+    position: relative;
+  }
+  .hero h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .hero p {
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 100%;
+  }
+  .hero img {
+    margin-top: 32px;
+    position: relative;
+    width: 100%;
+  }
+  .hero a.btn {
+    width: 100%;
+  }
+}
+
+.news {
+  position: relative;
+}
+.news > h2 {
+  font-family: "OCR-A-Std-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #181A1A;
+  margin-bottom: 58px;
+  position: relative;
+}
+.news > h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -16px;
+  height: 2px;
+  width: 100%;
+  background: #F4F5F7;
+  border-radius: 24px;
+}
+.news section {
+  display: flex;
+  flex-direction: row;
+}
+.news section:not(:first-child) {
+  margin-top: 32px;
+}
+.news section .img {
+  display: block;
+  width: 400px;
+  height: 280px;
+  position: relative;
+  flex-shrink: 0;
+}
+.news section .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+.news section .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  border: 3px solid #F4F5F7;
+  border-left: none;
+  justify-content: space-between;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.news section .content h2 {
+  font-family: "Amsi Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #3BC9AF;
+}
+.news section .content p {
+  font-family: "Amsi Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #181A1A;
+  margin-top: 16px;
+}
+.news section .content a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+@media screen and (max-width: 1024px) {
+  .news section {
+    flex-direction: column;
+  }
+  .news section .img {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  .news section .img img {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .news section .img:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 81.633%;
+  }
+  .news section .content {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-left: 3px solid #F4F5F7;
+    border-top: none;
+  }
+  .news section .content .btn {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+.books {
+  position: relative;
+}
+.books > h2 {
+  font-family: "OCR-A-Std-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #181A1A;
+  margin-bottom: 58px;
+  position: relative;
+}
+.books > h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -16px;
+  height: 2px;
+  width: 100%;
+  background: #F4F5F7;
+  border-radius: 24px;
+}
+.books .list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+.books section {
+  display: grid;
+  flex-direction: row;
+}
+.books section .img {
+  display: block;
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+.books section .img:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 81.633%;
+}
+.books section .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.books section .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px 16px;
+  border: 3px solid #F4F5F7;
+  border-top: none;
+  justify-content: space-between;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+.books section .content h2 {
+  font-family: "Amsi Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #3BC9AF;
+  text-align: center;
+}
+.books section .content a {
+  margin-top: 16px;
+  align-self: center;
+}
+@media screen and (max-width: 1190px) {
+  .books .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .books .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.grid-images .container {
+  margin-bottom: 20px;
+}
+.grid-images .container h2 {
+  font-family: "OCR-A-Std-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #181A1A;
+  margin-bottom: 32px;
+}
+.grid-images .grid {
+  row-gap: 40px;
+  column-gap: 40px;
+}
+.grid-images .grid .img {
+  position: relative;
+}
+.grid-images .grid .img img {
+  border-radius: 24px;
+}
+.grid-images .grid .img p {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  display: block;
+  border-radius: 8px;
+  background-color: #3BC9AF;
+  font-family: "Amsi Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  color: #fff;
+  padding: 0 10px;
+  transform: translateY(50%);
+}
+@media screen and (max-width: 1024px) {
+  .grid-images .grid .img img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .grid-images .grid .img p {
+    transform: translateY(0%) translateX(-50%);
+    left: 50%;
+  }
+}
+
+.green-block {
+  display: block;
+  background-color: #3BC9AF;
+  position: relative;
+}
+.green-block .container {
+  z-index: 2;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  position: relative;
+}
+.green-block:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url("../img/pattern.svg");
+  opacity: 0.02;
+}
+.green-block h2 {
+  font-size: 56px;
+  color: #fff;
+  text-align: center;
+  font-family: "OCR-A-Std-Regular";
+}
+.green-block p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 36px;
+  width: 100%;
+  max-width: 693px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  font-family: "Amsi Pro";
+}
+.green-block a.btn {
+  margin-top: 32px;
+}
+@media screen and (max-width: 1024px) {
+  .green-block .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .green-block h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .green-block p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .green-block a.btn {
+    width: 100%;
+  }
+}
+
+.image-block.sided .container {
+  position: relative;
+}
+.image-block.sided .info {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: 754px;
+  padding: 40px;
+  background-color: #F4F5F7;
+  z-index: 2;
+  border-radius: 24px;
+  text-align: left !important;
+}
+.image-block.sided .info h2 {
+  font-family: "OCR-A-Std-Regular";
+  font-size: 36px;
+}
+.image-block.sided .info p {
+  font-family: "Amsi Pro";
+  font-size: 20px;
+  line-height: 36px;
+  margin-top: 24px;
+}
+.image-block.sided .info a.btn {
+  margin-top: 32px;
+}
+.image-block.sided .image {
+  display: block;
+  width: 100%;
+  max-width: 1120px;
+  position: relative;
+  border-radius: 24px;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+}
+.image-block.sided .image:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 53.571%;
+}
+.image-block.sided.left .image {
+  margin-left: auto;
+  margin-right: 0;
+}
+.image-block.sided.left .info {
+  left: 0;
+  text-align: left;
+}
+.image-block.sided.right .image {
+  margin-left: 0;
+  margin-right: auto;
+}
+.image-block.sided.right .info {
+  right: 0;
+  text-align: right;
+}
+@media screen and (max-width: 1024px) {
+  .image-block.sided .container {
+    padding-top: 66.667%;
+  }
+  .image-block.sided .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: calc(100% - 24px);
+  }
+  .image-block.sided .image:before {
+    padding-bottom: 116.618%;
+  }
+  .image-block.sided .info {
+    position: relative;
+    top: initial !important;
+    left: initial !important;
+    right: initial !important;
+    transform: none;
+    max-width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+  }
+  .image-block.sided .info h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .image-block.sided .info p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 16px;
+  }
+  .image-block.sided .info a.btn {
+    width: 100%;
+  }
+}
+
+.dark-image-block {
+  background-color: #181A1A;
+  color: #fff;
+}
+.dark-image-block .container {
+  padding: 98px 0;
+  position: relative;
+}
+.dark-image-block h2 {
+  font-family: "OCR-A-Std-Regular";
+  font-size: 36px;
+  position: relative;
+  z-index: 2;
+}
+.dark-image-block p {
+  font-family: "Amsi Pro";
+  font-size: 20px;
+  line-height: 36px;
+  width: 100%;
+  max-width: 904px;
+  margin-top: 24px;
+  position: relative;
+  z-index: 2;
+}
+.dark-image-block a {
+  margin-top: 32px;
+  position: relative;
+  z-index: 2;
+}
+.dark-image-block img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+  .dark-image-block .container {
+    padding: 56px 0 0;
+    position: relative;
+  }
+  .dark-image-block h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .dark-image-block p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .dark-image-block a {
+    width: 100%;
+  }
+  .dark-image-block img {
+    position: relative;
+    bottom: initial;
+    right: initial;
+    height: auto;
+    width: 100%;
+    margin-top: 64px;
+  }
+}
+
+.green-hero-video {
+  display: block;
+  position: relative;
+}
+.green-hero-video .bg {
+  width: 100%;
+  padding-bottom: 32.014%;
+  background-color: #3BC9AF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  max-height: 461px;
+  z-index: 1;
+}
+.green-hero-video .bg:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url("../img/pattern.svg");
+  opacity: 0.02;
+}
+.green-hero-video .container {
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  position: relative;
+  padding-top: 80px;
+}
+.green-hero-video .container > h2 {
+  display: block;
+  width: 340px;
+  padding-top: 67px;
+  font-family: "OCR-A-Std-Regular";
+  font-size: 36px;
+  line-height: 56px;
+  color: #fff;
+  flex-shrink: 0;
+  white-space: pre-line;
+  padding-right: 10px;
+}
+.green-hero-video .container > .video {
+  width: 100%;
+  position: relative;
+}
+.green-hero-video .container > .video:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 56.17%;
+}
+.green-hero-video .container > .video > video {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 24px;
+}
+@media screen and (max-width: 1024px) {
+  .green-hero-video .container {
+    padding-top: 64px;
+    flex-direction: column;
+  }
+  .green-hero-video .container > h2 {
+    font-size: 32px;
+    line-height: 42px;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .green-hero-video .bg {
+    padding-bottom: 49%;
+  }
+}
+
+.green-hero-image {
+  display: block;
+  position: relative;
+}
+.green-hero-image .bg {
+  width: 100%;
+  background-color: #3BC9AF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 89%;
+  z-index: 1;
+}
+.green-hero-image .bg:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url("../img/pattern.svg");
+  opacity: 0.02;
+}
+.green-hero-image .container {
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  position: relative;
+  padding-top: 80px;
+}
+.green-hero-image .container > p {
+  display: block;
+  width: 520px;
+  padding-top: 24px;
+  font-family: "Amsi Pro";
+  font-size: 20px;
+  line-height: 36px;
+  color: #fff;
+  flex-shrink: 0;
+  white-space: pre-line;
+  padding-right: 40px;
+}
+.green-hero-image .container > .img {
+  width: 100%;
+  position: relative;
+}
+.green-hero-image .container > .img:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 56.17%;
+}
+.green-hero-image .container > .img > img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (max-width: 1024px) {
+  .green-hero-image .container {
+    padding-top: 64px;
+    flex-direction: column;
+  }
+  .green-hero-image .container > p {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.image-info-block {
+  margin-bottom: 20px;
+}
+.image-info-block .container h2 {
+  font-family: "OCR-A-Std-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #181A1A;
+  margin-bottom: 32px;
+}
+.image-info-block .container .content {
+  display: flex;
+  flex-direction: row;
+}
+.image-info-block .container .content .img {
+  position: relative;
+  width: 100%;
+}
+.image-info-block .container .content .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: auto;
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: center;
+}
+.image-info-block .container .content .img p {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  display: block;
+  border-radius: 8px;
+  background-color: #3BC9AF;
+  font-family: "Amsi Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  color: #fff;
+  padding: 0 10px;
+  transform: translateY(50%);
+}
+.image-info-block .container .content .img:before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 54.209%;
+}
+.image-info-block .container .content .info {
+  flex-shrink: 0;
+  width: 496px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  font-family: "Amsi Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  white-space: pre-line;
+}
+@media screen and (max-width: 1190px) {
+  .image-info-block .container .content {
+    flex-direction: column;
+  }
+  .image-info-block .container .content .info {
+    padding: 0;
+    margin-top: 32px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .image-info-block .container .content .img:before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 94.461%;
+  }
+}
+
+.store-product-grid {
+  display: grid;
+  column-gap: 24px;
+  row-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.store-product-grid .product {
+  background-color: #F4F5F7;
+  border: 3px solid #F4F5F7;
+  border-radius: 24px;
+}
+.store-product-grid .product .img {
+  position: relative;
+  height: auto;
+}
+.store-product-grid .product .img:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.store-product-grid .product .img img {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.store-product-grid .product .info {
+  padding: 24px 21px;
+}
+.store-product-grid .product .info h3 {
+  font-family: "Amsi Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #181A1A;
+}
+.store-product-grid .product .info p.price {
+  font-family: "Amsi Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3BC9AF;
+  margin-top: 11px;
+}
+.store-product-grid .product .info .btn {
+  margin-top: 15px;
+  width: 100%;
+  border: 1px solid #181A1A;
+  background-color: transparent;
+  color: #181A1A;
+}
+@media screen and (max-width: 1190px) {
+  .store-product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .store-product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.green-center-image-hero {
+  display: block;
+  position: relative;
+  padding-top: 80px;
+}
+.green-center-image-hero .bg {
+  background-color: #3BC9AF;
+  position: absolute;
+  z-index: 1;
+  height: 75.8224%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.green-center-image-hero .bg:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-image: url("../img/pattern.svg");
+  opacity: 0.02;
+}
+.green-center-image-hero .img {
+  width: 100%;
+  max-width: 940px;
+  height: 0;
+  position: relative;
+  height: auto;
+  z-index: 2;
+  margin: auto;
+}
+.green-center-image-hero .img:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 56.17%;
+  position: relative;
+}
+.green-center-image-hero .img > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+.green-center-image-hero .img > img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.grid-image-cards-dropdown .container {
+  position: relative;
+}
+.grid-image-cards-dropdown h2 {
+  font-family: "OCR-A-Std-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #181A1A;
+  position: relative;
+  margin-bottom: 58px;
+}
+.grid-image-cards-dropdown h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -16px;
+  height: 2px;
+  width: 100%;
+  background: #F4F5F7;
+  border-radius: 24px;
+}
+.grid-image-cards-dropdown button.trigger-dropdown {
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 8px;
+  background-color: #3BC9AF;
+  background-image: url(../img/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.grid-image-cards-dropdown button.trigger-dropdown:hover {
+  opacity: 0.8;
+}
+.grid-image-cards-dropdown button.trigger-dropdown:active {
+  opacity: 0.6;
+}
+.grid-image-cards-dropdown .grid {
+  column-gap: 40px;
+  row-gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 1024px) {
+  .grid-image-cards-dropdown .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.grid-image-cards-dropdown .img-card {
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid #F4F5F7;
+  box-sizing: border-box;
+  border-radius: 24px;
+  padding: 40px 40px;
+}
+.grid-image-cards-dropdown .img-card:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+}
+.grid-image-cards-dropdown .img-card .img {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
